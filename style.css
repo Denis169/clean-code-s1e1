@@ -36,7 +36,7 @@
 .add-item__task {
   width: 56%;
   display: inline-block;
-  flex-grow: 1
+  flex-grow: 1;
 }
 
 .add-item__insert {
@@ -139,7 +139,7 @@ label[for="new-task"] {
 }
 
 .row >    input[type="text"] {
-  width: 226px
+  width: 226px;
 }
 
 button.delete .button-image {
