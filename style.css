@@ -1,22 +1,22 @@
 /* Basic Style */
-body {
+.page {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
 }
 
-header {
+.head {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
 
-header img {
+.head__img {
   width: 100%;
 }
 
-header .head__more-inf {
+.head__more-inf {
   font-family: fantasy, cursive;
 }
 
@@ -41,20 +41,21 @@ header .head__more-inf {
   display: flex;
 }
 
-ul {
+.list {
   margin:0;
   padding: 0px;
 }
 
-li, h3 {
+.todo__style {
   list-style:none;
 }
 
-input,button{
+.input,
+.button{
   outline:none;
 }
 
-button {
+.button {
   background: none;
   border: 0px;
   color: #888;
@@ -64,13 +65,13 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.button:hover {
   color: #3a3A3a;
 }
 
 /* Heading */
 
-h3,
+.h3,
 label[for="new-task"] {
   color: #333;
   font-weight: 700;
@@ -105,13 +106,13 @@ label[for="new-task"] {
   margin: 0 0 20px;
 }
 
-input#new-task {
+.add-item__task {
   width: 318px;
 }
 
 /* Task list */
 
-li {
+.row {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -121,53 +122,53 @@ li {
   align-items: center;
 }
 
-li > * {
+.row > * {
   vertical-align: middle;
 }
 
-li > input[type="checkbox"] {
+.row > input[type="checkbox"] {
   margin: 0 10px;
 }
 
-li > label {
+.row > .task {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-li >    input[type="text"] {
+.row >    input[type="text"] {
   width: 226px
 }
 
-button.delete img {
+button.delete .button-image {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-button.delete img:hover {
+button.delete .button-image:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
 
-ul#completed-tasks label {
+.completed-tasks .task {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
 
-ul li input[type=text] {
-  display:none
+.list .todo__style input[type=text] {
+  display:none;
 }
 
-ul li.edit-mode input[type=text] {
+.list .todo__style.edit-mode input[type=text] {
   display:inline-block;
-  width:224px
+  width:224px;
 }
 
-ul li.edit-mode label {
+.list .todo__style.edit-mode label {
   display:none;
 }
