@@ -20,7 +20,7 @@
   font-family: fantasy, cursive;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
 
   header { text-align: center;
   }
@@ -44,22 +44,22 @@
 }
 
 .list {
-  margin:0;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 .todo__style {
-  list-style:none;
+  list-style: none;
 }
 
 .input,
 .button{
-  outline:none;
+  outline: none;
 }
 
 .button {
   background: none;
-  border: 0px;
+  border: 0;
   color: #888;
   font-size: 15px;
   width: 60px;
@@ -162,14 +162,14 @@ button.delete .button-image:hover {
 /* Edit Task */
 
 .list .todo__style input[type=text] {
-  display:none;
+  display: none;
 }
 
 .list .todo__style.edit-mode input[type=text] {
-  display:inline-block;
-  width:224px;
+  display: inline-block;
+  width: 224px;
 }
 
 .list .todo__style.edit-mode label {
-  display:none;
+  display: none;
 }
