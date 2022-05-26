@@ -25,7 +25,7 @@ header .header__more-inf {
   }
 }
 
-.centered-main-page-element {
+.todo-list {
   display: block;
   width: 500px;
   margin: 0 auto 0;
@@ -37,7 +37,7 @@ header .header__more-inf {
   flex-grow: 1
 }
 
-.add-item__task-row-wrapper {
+.add-item__insert {
   display: flex;
 }
 
